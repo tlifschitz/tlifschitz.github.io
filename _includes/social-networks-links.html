@@ -379,6 +379,18 @@
   </li>
   {%- endif -%}
 
+  {%- if network[0] == "csacademy" -%}
+  <li class="list-inline-item">
+    <a href="https://csacademy.com/user/{{ network[1] }}" title="CS Academy">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <img src="assets/img/csacademy.png" class="fa-stack-1x fa-inverse" alt="CS Academy Logo">
+      </span>
+      <span class="sr-only">CS Academy</span>
+   </a>
+  </li>
+  {%- endif -%}
+
   {%- if network[0] == "untappd" -%}
   <li class="list-inline-item">
     <a href="https://untappd.com/user/{{ network[1] }}" title="Untappd">
