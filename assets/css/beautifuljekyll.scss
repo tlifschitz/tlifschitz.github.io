@@ -10,7 +10,7 @@ layout: null
   --text-col: {{ site.text-col | default: "#404040" }};
   --link-col: {{ site.link-col | default: "#008AFF" }};
   --hover-col: {{ site.hover-col | default: "#0085A1" }};
-  --navbar-col: {{ site.navbar-col | default: "#EAEAEA" }};
+  --navbar-col: {{ site.navbar-col | default: "#2e9450" }};
   --navbar-text-col: {{ site.navbar-text-col | default: "#404040" }};
   --navbar-border-col: {{ site.navbar-border-col | default: "#DDDDDD" }};
   --footer-col: {{ site.footer-col | default: "#EAEAEA" }};
@@ -157,7 +157,7 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-  background-color: var(--navbar-col);
+  background-color: transparent;
   border-bottom: 1px solid var(--navbar-border-col);
   font-family: var(--header-font);
   {% if site.navbar-img %}
@@ -672,6 +672,13 @@ footer .footer-custom-content {
 
 /* --- Post and page headers --- */
 
+.text-overlay {
+  background-color: rgba(150, 150, 150, 0.3);
+  padding: 0.2rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+
 .intro-header {
   margin: 5rem 0 1.25rem;
   position: relative;
@@ -701,9 +708,9 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  -webkit-transition: opacity 1s linear;
-  -moz-transition: opacity 1s linear;
-  transition: opacity 1s linear;
+  -webkit-transition: opacity 2s linear;
+  -moz-transition: opacity 2s linear;
+  transition: opacity 2s linear;
 }
 .intro-header .page-heading {
   text-align: center;
@@ -717,6 +724,7 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 .intro-header .page-heading h1 {
   margin-top: 0;
   font-size: 3.125rem;
+  @extend .text-overlay;
 }
 .intro-header .post-heading h1 {
   margin-top: 0;
@@ -730,6 +738,17 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
   font-family: var(--header-font);
   font-weight: 300;
   margin: 0.625rem 0 0;
+  @extend .text-overlay;
+  display: inline-block;
+}
+.page-subheading-text {
+  font-size: 1rem;
+  display: block;
+  font-family: var(--header-font);
+  font-weight: 300;
+  margin: 0.425rem 0 0;
+  @extend .text-overlay;
+  display: inline-block;
 }
 .intro-header .post-heading .post-subheading {
   margin-bottom: 1.25rem;

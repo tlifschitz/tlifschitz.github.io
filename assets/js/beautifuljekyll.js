@@ -57,7 +57,8 @@ let BeautifulJekyllJS = {
       const imgInfo = BeautifulJekyllJS.getImgInfo();
       const src = imgInfo.src;
       const desc = imgInfo.desc;
-      BeautifulJekyllJS.setImg(src, desc);
+      BeautifulJekyllJS.setImg(src);
+      BeautifulJekyllJS.setDesc(desc);
 
       // For better UX, prefetch the next image so that it will already be loaded when we want to show it
       const getNextImg = function() {
@@ -72,17 +73,21 @@ let BeautifulJekyllJS = {
         setTimeout(function(){
           const img = $("<div></div>").addClass("big-img-transition").css("background-image", 'url(' + src + ')');
           $(".intro-header.big-img").prepend(img);
-          setTimeout(function(){ img.css("opacity", "1"); }, 50);
+          setTimeout(function(){ img.css("opacity", "1"); }, 100);
 
           // after the animation of fading in the new image is done, prefetch the next one
           //img.one("transitioned webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
           setTimeout(function() {
+            BeautifulJekyllJS.setDesc(desc);
+          }, 1000);
+
+          setTimeout(function() {
             BeautifulJekyllJS.setImg(src, desc);
             img.remove();
             getNextImg();
-          }, 1000);
+          }, 2000);
           //});
-        }, 6000);
+        }, 4000);
       };
 
       // If there are multiple images, cycle through them
@@ -103,8 +108,11 @@ let BeautifulJekyllJS = {
     }
   },
 
-  setImg : function(src, desc) {
+  setImg : function(src) {
     $(".intro-header.big-img").css("background-image", 'url(' + src + ')');
+  },
+
+  setDesc : function(desc) {
     if (typeof desc !== typeof undefined && desc !== false) {
       $(".img-desc").text(desc).show();
     } else {
