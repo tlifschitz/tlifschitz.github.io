@@ -6,4 +6,7 @@ gemspec
 
 group :jekyll_plugins do
 gem "jekyll-pdf-embed"
+gem 'logger'
+gem 'bigdecimal'
+gem 'csv'
 end
