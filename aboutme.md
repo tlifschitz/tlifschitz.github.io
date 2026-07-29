@@ -6,13 +6,12 @@ description: "Who I am: embedded systems technical lead at Maper, electronics en
 
 <div class="prose" markdown="1">
 
-# About<span class="cursor" aria-hidden="true"></span>
-{: .page-title}
+<h1 class="page-title"><span class="type-target">About</span><span class="cursor" aria-hidden="true"></span></h1>
 
-I'm Tobi — an electronics engineer in Buenos Aires. I grew up in Tandil,
-went through a technical high school, and have been taking things apart to
-see how they work for as long as I can remember. These days I put them back
-together for a living.
+I'm Tobi — an electronics engineer living in Buenos Aires. I grew up in
+[Tandil](https://en.wikipedia.org/wiki/Tandil), went through a technical
+high school, and have been taking things apart to see how they work for as
+long as I can remember. These days I put them back together for a living.
 
 ## Now
 

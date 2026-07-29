@@ -139,6 +139,11 @@ img { max-width: 100%; height: auto; display: block; }
   font-weight: 400;
 }
 
+.site-nav .brand-path {
+  color: var(--text-dim);
+  font-size: var(--size-0);
+}
+
 .site-nav ul {
   display: flex;
   gap: var(--space-3);
@@ -227,6 +232,9 @@ main {
     50% { opacity: 0; }
   }
 }
+
+/* while the title is being typed, the cursor stays solid */
+.typing .cursor { animation: none; opacity: 1; }
 
 .hero h1 {
   font-size: var(--size-3);
@@ -431,11 +439,16 @@ section + section { margin-top: var(--space-6); }
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 4px;
-  filter: saturate(0.8) contrast(0.98);
-  transition: filter 200ms ease;
+  filter: grayscale(1);
+  transition: filter 250ms ease;
 }
 
 .photos img:hover { filter: none; }
+
+/* touch screens have no hover — show color there */
+@media (hover: none) {
+  .photos img { filter: none; }
+}
 
 @media (max-width: 34rem) {
   .photos { grid-template-columns: repeat(2, 1fr); }

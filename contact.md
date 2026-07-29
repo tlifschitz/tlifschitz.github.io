@@ -6,8 +6,7 @@ description: "Get in touch with Tobías Lifschitz."
 
 <div class="prose" markdown="1">
 
-# Contact<span class="cursor" aria-hidden="true"></span>
-{: .page-title}
+<h1 class="page-title"><span class="type-target">Contact</span><span class="cursor" aria-hidden="true"></span></h1>
 
 Email is the most reliable transport layer I know. I read everything,
 and I answer.
