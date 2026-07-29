@@ -1,0 +1,16 @@
+# Tobías Lifschitz
+
+> Embedded systems engineer building low-power wireless sensor platforms from concept to large-scale field deployment, based in Buenos Aires, Argentina. Personal site covering professional background, technical work, and occasional engineering writeups.
+
+Tobías works across the full stack of a hardware product — hardware design, firmware, application software, and some backend. He is the Embedded Systems Technical Lead at Maper (a B2B industrial IoT startup), where he helped scale a wireless vibration monitoring platform from prototype to over 10,000 deployed devices. He is also a contributor to the open-source C++ BLE stack SimpleBLE, and has reverse-engineered Bluetooth protocols of commercial glucose meters.
+
+## About
+- [Home](https://tlifschitz.com/): Landing page — who Tobías is (Engineer · Maker · Explorer) and a photo carousel.
+- [About Me](https://tlifschitz.com/aboutme/): Professional background, technical stack (hardware, firmware, application, backend), and current work.
+
+## Writing
+- [Mitigating battery drainage during reset loops](https://tlifschitz.com/2024-07-27-limiting-reset-rate/): Firmware technique to extend battery life on an EFR32 device suffering undesired reset loops caused by voltage drops.
+
+## Optional
+- [Resume](https://tlifschitz.com/resume/): CV as an embedded PDF (also at /files/Tobias-Lifschitz-Resume-EN.pdf).
+- [Contact](https://tlifschitz.com/contact/): Email and LinkedIn.
