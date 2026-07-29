@@ -12,10 +12,6 @@ share-description: "Embedded systems engineer building low-power wireless sensor
   </a>
 </div>
 
-Senior Embedded Systems Engineer building low-power wireless sensor platforms from concept to large-scale field deployment. Deep experience in RTOS firmware, embedded DSP on constrained MCUs, and Thread mesh networks at scale. Over 6 years delivering connected hardware products, with recent ownership across mechanical, electronics, firmware, and cloud integration for industrial sensing systems.
-
----
-
 ## Experience
 
 ### [Maper](https://home.mapertech.com) — Buenos Aires, Argentina
