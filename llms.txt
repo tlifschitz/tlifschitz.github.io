@@ -12,5 +12,5 @@ Tobías works across the full stack of a hardware product — hardware design, f
 - [Mitigating battery drainage during reset loops](https://tlifschitz.com/2024-07-27-limiting-reset-rate/): Firmware technique to extend battery life on an EFR32 device suffering undesired reset loops caused by voltage drops.
 
 ## Optional
-- [Resume](https://tlifschitz.com/resume/): CV as an embedded PDF (also at /files/Tobias-Lifschitz-Resume-EN.pdf).
+- [Resume (PDF)](https://tlifschitz.com/files/Tobias-Lifschitz-Resume-EN.pdf): CV as a downloadable PDF.
 - [Contact](https://tlifschitz.com/contact/): Email and LinkedIn.

@@ -6,6 +6,12 @@ share-title: "Tobias Lifschitz | About me"
 share-description: "Embedded systems engineer building low-power wireless sensor platforms, from concept to large-scale field deployment"
 ---
 
+<div style="text-align: center; margin-bottom: 1rem;">
+  <a class="btn btn-primary" href="/files/Tobias-Lifschitz-Resume-EN.pdf" download>
+    <i class="fas fa-file-pdf"></i> Download Resume
+  </a>
+</div>
+
 ---
 
 ### Professional Background
