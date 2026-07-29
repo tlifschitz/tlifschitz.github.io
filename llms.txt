@@ -5,8 +5,8 @@
 Tobías works across the full stack of a hardware product — hardware design, firmware, application software, and some backend. He is the Embedded Systems Technical Lead at Maper (a B2B industrial IoT startup), where he helped scale a wireless vibration monitoring platform from prototype to over 10,000 deployed devices. He is also a contributor to the open-source C++ BLE stack SimpleBLE, and has reverse-engineered Bluetooth protocols of commercial glucose meters.
 
 ## About
-- [Home](https://tlifschitz.com/): Landing page — who Tobías is (Engineer · Maker · Explorer) and a photo carousel.
-- [About Me](https://tlifschitz.com/aboutme/): Professional background, technical stack (hardware, firmware, application, backend), and current work.
+- [Home](https://tlifschitz.com/): Who Tobías is, proof metrics (10,000+ devices, 1,000-node Thread mesh), and selected work.
+- [About Me](https://tlifschitz.com/aboutme/): Career timeline, technical stack, and life away from the bench.
 
 ## Writing
 - [Mitigating battery drainage during reset loops](https://tlifschitz.com/2024-07-27-limiting-reset-rate/): Firmware technique to extend battery life on an EFR32 device suffering undesired reset loops caused by voltage drops.

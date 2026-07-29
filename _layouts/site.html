@@ -12,7 +12,8 @@
   <meta property="og:title" content="{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }} — Embedded Systems Engineer{% endif %}">
   <meta property="og:description" content="{{ page.description | default: 'Embedded systems engineer building low-power wireless sensor platforms, from concept to large-scale field deployment.' }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="{{ '/assets/img/og-card.png' | absolute_url }}">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon.ico" sizes="any">
