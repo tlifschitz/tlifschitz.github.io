@@ -6,5 +6,19 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', '{{ site.gtag }}');
+
+  // Track which CV version the visitor came from (?r=XXXXX), then hide the code from the URL
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var cvId = params.get('r');
+    if (!cvId) return;
+
+    gtag('event', 'cv_visit', { cv_id: cvId });
+
+    params.delete('r');
+    var query = params.toString();
+    var cleanUrl = window.location.pathname + (query ? '?' + query : '') + window.location.hash;
+    history.replaceState(history.state, '', cleanUrl);
+  })();
 </script>
 {% endif %}
