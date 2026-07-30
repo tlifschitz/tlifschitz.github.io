@@ -14,12 +14,14 @@
     heading.classList.add("typing");
     el.textContent = "";
 
-    var step = Math.min(28, 900 / full.length);
-    var i = 0;
-    (function tick() {
-      el.textContent = full.slice(0, ++i);
-      if (i < full.length) setTimeout(tick, step);
+    var total = Math.min(28 * full.length, 900);
+    var start;
+    (function tick(ts) {
+      if (start === undefined) start = ts;
+      var i = Math.min(full.length, Math.round(((ts - start) / total) * full.length));
+      el.textContent = full.slice(0, i);
+      if (i < full.length) requestAnimationFrame(tick);
       else heading.classList.remove("typing");
-    })();
+    })(performance.now());
   });
 })();
