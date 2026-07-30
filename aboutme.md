@@ -8,7 +8,9 @@ description: "Who I am: embedded systems technical lead at Maper, electronics en
 
 <h1 class="page-title"><span class="type-target">About</span><span class="cursor" aria-hidden="true"></span></h1>
 
-I'm Tobi — an electronics engineer living in Buenos Aires. I grew up in
+<img class="headshot" src="/assets/img/headshot.jpg" alt="Tobías Lifschitz" width="360" height="360">
+
+I'm Tobi, an electronics engineer living in Buenos Aires. I grew up in
 [Tandil](https://en.wikipedia.org/wiki/Tandil), went through a technical
 high school, and have been taking things apart to see how they work for as
 long as I can remember. These days I put them back together for a living.
@@ -19,7 +21,7 @@ I lead embedded systems at [Maper](https://home.mapertech.com), an
 industrial IoT startup doing predictive maintenance. I joined as the first
 firmware intern when the sensor was a prototype; today I own the technical
 direction across firmware, electronics, and device-cloud integration for a
-platform with over 10,000 devices in the field — and I still write
+platform with over 10,000 devices in the field, and I still write
 critical-path firmware every week.
 
 ## Career
@@ -41,7 +43,7 @@ critical-path firmware every week.
 
 ## Away from the bench
 
-Competitive programming with team CorDamp — top 4% worldwide in
+Competitive programming with team CorDamp: top 4% worldwide in
 IEEEXtreme, four years running. A slowly growing DIY home-automation
 setup. Guitar, coffee, and mountains whenever possible.
 
