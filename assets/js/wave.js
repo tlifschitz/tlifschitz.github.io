@@ -1,9 +1,17 @@
-/* After the hero signal draws in, keep it gently oscillating: the same
-   damped sine with a slowly advancing phase. Skipped under reduced motion. */
+/* Hero signal: draw in over 900ms (the same duration the title takes to
+   type), then keep oscillating with a slowly advancing phase, with no gap
+   between the two. The CSS draw animation remains as the no-JS fallback.
+   Skipped entirely under reduced motion. */
 (function () {
   var path = document.querySelector(".signal[data-wave] path");
   if (!path) return;
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  var DRAW_MS = 900; /* keep in sync with the 900ms cap in type.js */
+  var LEN = 1400;
+
+  path.style.animation = "none";
+  path.style.strokeDashoffset = LEN;
 
   function d(phase) {
     var pts = [];
@@ -15,21 +23,24 @@
     return "M" + pts.join(" L");
   }
 
-  var started = false;
-  function start() {
-    if (started) return;
-    started = true;
-    path.style.strokeDasharray = "none";
-    var t0;
-    function frame(ts) {
-      if (t0 === undefined) t0 = ts;
-      path.setAttribute("d", d(((ts - t0) / 1000) * 0.8));
-      requestAnimationFrame(frame);
+  function easeOut(x) {
+    return 1 - Math.pow(1 - x, 3);
+  }
+
+  var t0;
+  function frame(ts) {
+    if (t0 === undefined) t0 = ts;
+    var t = ts - t0;
+    if (t < DRAW_MS) {
+      path.style.strokeDashoffset = LEN * (1 - easeOut(t / DRAW_MS));
+    } else {
+      if (path.style.strokeDasharray !== "none") {
+        path.style.strokeDasharray = "none";
+        path.style.strokeDashoffset = "0";
+      }
+      path.setAttribute("d", d(((t - DRAW_MS) / 1000) * 0.8));
     }
     requestAnimationFrame(frame);
   }
-
-  /* hand off seamlessly once the draw-in finishes (phase 0 == static path) */
-  path.addEventListener("animationend", start);
-  setTimeout(start, 2000);
+  requestAnimationFrame(frame);
 })();
