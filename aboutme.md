@@ -8,7 +8,7 @@ description: "Who I am: embedded systems technical lead at Maper, electronics en
 
 <h1 class="page-title"><span class="type-target">About</span><span class="cursor" aria-hidden="true"></span></h1>
 
-<img class="headshot" src="/assets/img/headshot.jpg" alt="Tobías Lifschitz" width="360" height="360">
+<img class="headshot" src="/assets/img/headshot.jpg" alt="Tobías Lifschitz" width="640" height="640">
 
 I'm Tobi, an electronics engineer living in Buenos Aires. I grew up in
 [Tandil](https://en.wikipedia.org/wiki/Tandil), went through a technical

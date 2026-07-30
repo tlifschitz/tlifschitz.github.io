@@ -441,28 +441,28 @@ section + section { margin-top: var(--space-6); }
   font-size: var(--size-0);
 }
 
-/* headshot beside the about intro */
+/* headshot above the about intro */
 .headshot {
-  float: right;
-  width: 170px;
-  margin: 0.25rem 0 var(--space-2) var(--space-3);
-  border-radius: 4px;
+  display: block;
+  width: 180px;
+  margin: 0 auto var(--space-4);
+  border-radius: 50%;
+  border: 1px solid var(--line);
   filter: grayscale(1);
-  transition: filter 250ms ease;
+  transition: filter 250ms ease, border-color 250ms ease;
 }
 
-.headshot:hover { filter: none; }
+.headshot:hover {
+  filter: none;
+  border-color: var(--accent);
+}
 
 @media (hover: none) {
   .headshot { filter: none; }
 }
 
 @media (max-width: 34rem) {
-  .headshot {
-    float: none;
-    width: 128px;
-    margin: 0 0 var(--space-2);
-  }
+  .headshot { width: 150px; }
 }
 
 /* photo strip */
