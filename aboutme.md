@@ -45,7 +45,8 @@ critical-path firmware every week.
 
 Competitive programming with team CorDamp: top 4% worldwide in
 IEEEXtreme, four years running. A slowly growing DIY home-automation
-setup. Guitar, coffee, and mountains whenever possible.
+setup. Remodeling my kitchen from CAD to finished cabinets, all with my own
+hands. Guitar, coffee, and mountains whenever possible.
 
 <div class="photos">
   <img src="/assets/photos/opt/IMG_3505.jpg" alt="Refugio Viejo Trondaor, Neuquén" loading="lazy" width="640" height="640">
