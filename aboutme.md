@@ -12,7 +12,7 @@ description: "Who I am: embedded systems technical lead at Maper, electronics en
 
 I'm Tobi, an electronics engineer living in Buenos Aires. I grew up in
 [Tandil](https://en.wikipedia.org/wiki/Tandil), went through a technical
-high school, and have been taking things apart to see how they work for as
+secondary school and have been taking things apart to see how they work for as
 long as I can remember. These days I put them back together for a living.
 
 ## Now
@@ -20,7 +20,7 @@ long as I can remember. These days I put them back together for a living.
 I lead embedded systems at [Maper](https://home.mapertech.com), an
 industrial IoT startup doing predictive maintenance. I joined as the first
 firmware intern when the sensor was a prototype; today I own the technical
-direction across firmware, electronics, and device-cloud integration for a
+direction across firmware, electronics and device-cloud integration for a
 platform with over 10,000 devices in the field, and I still write
 critical-path firmware every week.
 
@@ -31,7 +31,7 @@ critical-path firmware every week.
   <li><span class="when">2023 – 25</span><span class="what">Senior Embedded Systems Engineer · Maper<small>0 → 6,000 sensors, CI/CD, continuous capture</small></span></li>
   <li><span class="when">2021 – 23</span><span class="what">Embedded Systems Engineer · Maper<small>OTA, DSP, +50% battery life, EOL testbench</small></span></li>
   <li><span class="when">2019 – 21</span><span class="what">Embedded Developer Intern · Maper<small>first sensor: requirements, PCB bring-up, OpenThread</small></span></li>
-  <li><span class="when">2015 – 20</span><span class="what">Electronics Engineering · ITBA<small>2nd-best GPA of the cohort · RISC-V core on FPGA</small></span></li>
+  <li><span class="when">2015 – 20</span><span class="what">Electronics Engineering · ITBA<small>2nd-highest average in the cohort · RISC-V core on FPGA</small></span></li>
 </ul>
 
 ## Stack
@@ -45,8 +45,9 @@ critical-path firmware every week.
 
 Competitive programming with team CorDamp: top 4% worldwide in
 IEEEXtreme, four years running. A slowly growing DIY home-automation
-setup. Remodeling my kitchen from CAD to finished cabinets, all with my own
-hands. Guitar, coffee, and mountains whenever possible.
+setup. Remodelling my kitchen from CAD to finished cabinets, all with my own
+hands. Guitar, coffee and mountains whenever possible. If you recognise
+any of the places below, do [drop me a note](/contact/)!
 
 <div class="photos">
   <img src="/assets/photos/opt/IMG_3505.jpg" alt="Refugio Viejo Trondaor, Neuquén" loading="lazy" width="640" height="640">
@@ -57,6 +58,6 @@ hands. Guitar, coffee, and mountains whenever possible.
 
 ## Papers, please
 
-The full history lives in the <a href="/files/Tobias-Lifschitz-Resume-EN.pdf">résumé (PDF)</a>.
+The full history lives in the <a href="/files/Tobias-Lifschitz-Resume-EN.pdf">CV (PDF)</a>.
 
 </div>
